@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6F0FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_header3"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CodeQuiz   Boolean Battle"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:30"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Badge Soal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Soal 3/5"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_badge4"
+            android:layout_marginTop="10dp" />
+
+        <!-- Card Soal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card4"
+            android:padding="18dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Real-World Code"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1E3557" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebuah program kasir menerapkan diskon..."
+                android:textSize="14sp"
+                android:textColor="#465A78"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Pertanyaan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bangun struktur if-else yang tepat untuk kasus ini?"
+            android:textSize="15sp"
+            android:textColor="#1E3557"
+            android:layout_marginTop="18dp"/>
+
+        <!-- Jawaban -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if (total) { if (total &gt; 1000) { } }"/>
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if (total &gt; 1000) { if (total &lt;= 1000) { } }"/>
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if (total &gt; 1000) { if (total == 1000) { } }"/>
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if (diskon) { if (total &lt;= 1000) { } }"/>
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if (x &gt; 5) { if (total &lt;= 1000) { } }"/>
+
+            <TextView
+                style="@style/AnswerOption"
+                android:text="if else (total &gt; 1000) { diskon; }"/>
+        </GridLayout>
+
+        <!-- Tombol -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KUNCI JAWABAN"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button4"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

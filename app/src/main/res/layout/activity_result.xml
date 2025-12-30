@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- HEADER SCORE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CodeQuiz"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/robot_quiz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Score: 1580"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:paddingStart="5dp"/>
+        </LinearLayout>
+
+        <!-- GAMBAR ROBOT -->
+        <ImageView
+            android:id="@+id/resultRobot"
+            android:layout_width="253dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_leader" />
+
+        <!-- TEKS FANTASTIC -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FANTASTIC!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FDC743"
+            android:layout_marginTop="10dp" />
+
+        <!-- SKOR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/5 BENAR!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FDC743"
+            android:layout_marginTop="5dp" />
+
+        <!-- INFO SALAH / KOSONG -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❌ 1 Salah"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:paddingEnd="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱ 0 Kosong"
+                android:textSize="15sp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- TOMBOL ULANGI KUIS -->
+        <Button
+            android:id="@+id/btnUlangi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ULANGI KUIS"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_btn_green"
+            android:layout_marginTop="25dp"
+            android:padding="14dp"/>
+
+        <!-- TOMBOL LIHAT JAWABAN -->
+        <Button
+            android:id="@+id/btnJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIHAT JAWABAN"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_btn_purple"
+            android:layout_marginTop="12dp"
+            android:padding="14dp"/>
+
+        <!-- TOMBOL LEADERBOARD -->
+        <Button
+            android:id="@+id/btnLeaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIHAT LEADERBOARD"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_btn_blue"
+            android:layout_marginTop="12dp"
+            android:padding="14dp"/>
+    </LinearLayout>
+</ScrollView>

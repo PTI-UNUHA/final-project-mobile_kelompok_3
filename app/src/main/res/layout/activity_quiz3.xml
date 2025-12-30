@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6F2FF"
+    android:padding="16dp">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_header3"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CodeQuiz   Boolean"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:30"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- KARTU SOAL -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soal 2/5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#4A4A4A" />
+
+        <TextView
+            android:id="@+id/txtPertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cuplikan kode berikut akan menghasilkan output &quot;true&quot;."
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_code"
+            android:padding="12dp"
+            android:text="boolean hasil = (10 &gt; 5 &amp;&amp; 8 &lt; 12);"
+            android:textColor="#1A1A1A"
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+    <!-- TOMBOL TRUE & FALSE -->
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnTrue"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="TRUE"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_true" />
+
+        <Button
+            android:id="@+id/btnFalse"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="FALSE"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_false" />
+    </LinearLayout>
+
+    <!-- TOMBOL KUNCI JAWABAN -->
+    <Button
+        android:id="@+id/btnKunci"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="KUNCI JAWABAN"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_kunci" />
+
+</LinearLayout>

@@ -27,7 +27,9 @@ class MainActivity : ComponentActivity() {
 
         btnStart.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
 

@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="12580"
+        android:text="1670"
         android:textColor="@android:color/white"
         android:textSize="18sp"/>
 </LinearLayout>

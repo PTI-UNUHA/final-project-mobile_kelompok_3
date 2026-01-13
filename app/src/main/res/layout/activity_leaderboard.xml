@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1580"
+                android:text="2620"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -119,17 +119,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="[Nama Pengguna]"
+                    android:text="Harry Potter"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="(MULAI KUIS)"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp"/>
             </LinearLayout>
 
             <TextView

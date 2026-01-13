@@ -145,7 +145,7 @@
             android:id="@+id/btnHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="KEMBALI KE BERANDA"
+            android:text="KEMBALI KE HOME"
             android:textAllCaps="true"
             android:textStyle="bold"
             android:textColor="@android:color/white"

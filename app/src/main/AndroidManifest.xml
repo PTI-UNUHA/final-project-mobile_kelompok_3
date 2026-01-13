@@ -10,6 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeQuizDAM">
         <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JawabanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisFourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KuisOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardAdventureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MateriActivity"
+            android:exported="false" />
+        <activity
             android:name=".Materi"
             android:exported="false" />
         <activity android:name=".DashboardActivity" />

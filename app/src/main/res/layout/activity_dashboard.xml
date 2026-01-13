@@ -61,20 +61,27 @@
             android:textSize="17sp" />
 
         <!-- ================= CARD MATERI ================= -->
+
+        <!-- ================= CARD QUIZ ================= -->
         <LinearLayout
+            android:id="@+id/cardMateri"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginBottom="18dp"
             android:background="@drawable/card_materi"
             android:orientation="horizontal"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
 
-            <ImageView
+
+        <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="20dp"
-                android:src="@drawable/ic_materi"
-                android:contentDescription="Materi" />
+                android:contentDescription="Materi"
+                android:src="@drawable/ic_materi" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -88,7 +95,7 @@
                     android:text="PELAJARI MATERI"
                     android:textColor="#FFFFFF"
                     android:textSize="23sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/tvJudul"
@@ -103,27 +110,31 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- ================= CARD QUIZ ================= -->
+        <!-- ================= CARD PRESTASI ================= -->
         <LinearLayout
+            android:id="@+id/cardAdventure"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginBottom="18dp"
             android:background="@drawable/card_adventure"
             android:orientation="horizontal"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginEnd="20dp"
-                android:src="@drawable/ic_adventure"
-                android:contentDescription="Adventure" />
+                android:contentDescription="Adventure"
+                android:src="@drawable/ic_adventure" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -141,12 +152,13 @@
                     android:textColor="#E2F1F8"
                     android:textSize="16sp"
                     android:textStyle="bold" />
-
             </LinearLayout>
+
         </LinearLayout>
 
-        <!-- ================= CARD PRESTASI ================= -->
+
         <LinearLayout
+            android:id="@+id/cardPrestasi"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginBottom="18dp"

@@ -119,6 +119,7 @@
 
         <!-- Tombol -->
         <Button
+            android:id="@+id/btnKuncitiga"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="KUNCI JAWABAN"

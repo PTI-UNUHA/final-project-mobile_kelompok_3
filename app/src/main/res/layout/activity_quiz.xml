@@ -36,6 +36,18 @@
                 android:textSize="18sp"
                 android:textColor="#FFFFFF"
                 android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txtTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:30"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
         </RelativeLayout>
 
         <!-- BADGE SOAL -->
@@ -218,13 +230,15 @@ if (x &gt; 5) {
 
         <!-- BUTTON -->
         <Button
+            android:id="@+id/btnKunciJawaban"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="KUNCI JAWABAN"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
             android:layout_marginTop="25dp"
-            android:background="@drawable/btn_orange" />
+            android:background="@drawable/btn_orange"
+            android:backgroundTint="@null" />
 
     </LinearLayout>
 </ScrollView>

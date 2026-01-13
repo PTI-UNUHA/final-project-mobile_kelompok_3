@@ -91,7 +91,7 @@
 
         <!-- Tombol Ulangi Kuis -->
         <Button
-            android:id="@+id/btnUlangi"
+            android:id="@+id/btnUlangiKuis"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:text="ULANGI KUIS"
@@ -102,7 +102,7 @@
 
         <!-- Tombol Leaderboard -->
         <Button
-            android:id="@+id/btnLeaderboard"
+            android:id="@+id/btnLeaderboardJawaban"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:text="LIHAT LEADERBOARD"

@@ -96,12 +96,7 @@
                 android:id="@+id/code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="[[int x = 10;
-if (x &gt; 5) {
-    System.out.println(&quot;Hello&quot;);
-} else {
-    System.out.println(&quot;World&quot;);
-}]]"
+                android:text="int x = 10;\nif (x &gt; 5) {\n    System.out.println(&quot;Hello&quot;);\n} else {\n    System.out.println(&quot;World&quot;);\n}"
                 android:textColor="#1E88E5"
                 android:textSize="15sp"
                 android:background="#E3F2FD"
@@ -118,6 +113,7 @@ if (x &gt; 5) {
 
             <!-- A -->
             <LinearLayout
+                android:id="@+id/option_a"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/option_green"
@@ -146,6 +142,7 @@ if (x &gt; 5) {
 
             <!-- B -->
             <LinearLayout
+                android:id="@+id/option_b"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/option_orange"
@@ -174,6 +171,7 @@ if (x &gt; 5) {
 
             <!-- C -->
             <LinearLayout
+                android:id="@+id/option_c"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/option_purple"
@@ -202,6 +200,7 @@ if (x &gt; 5) {
 
             <!-- D -->
             <LinearLayout
+                android:id="@+id/option_d"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/option_yellow"

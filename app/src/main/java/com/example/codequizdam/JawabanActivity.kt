@@ -19,7 +19,7 @@ class JawabanActivity : AppCompatActivity() {
         val btnulangi = findViewById<Button>( R.id.btnUlangiKuis)
 
         btnulangi.setOnClickListener {
-            val intent = Intent( this, KuisOneActivity::class.java)
+            val intent = Intent( this, QuizActivity::class.java)
             startActivity(intent)
         }
 

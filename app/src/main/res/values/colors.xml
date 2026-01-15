@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Warna untuk menyorot jawaban -->
+    <color name="selected_answer_bg">#A8D8FF</color>
+    <color name="selected_answer_border">#007BFF</color>
+
+    <!-- Warna teks asli dari style Anda -->
+    <color name="answer_option_text_color">#43536A</color>
+
+    <!-- PERBAIKAN: Warna untuk ResultActivity -->
+    <color name="yellow_fantastic">#FDC743</color>
+    <color name="green_good_job">#4CAF50</color>
+    <color name="red_try_again">#F44336</color>
 </resources>

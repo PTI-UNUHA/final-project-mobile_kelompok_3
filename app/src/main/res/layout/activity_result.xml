@@ -34,9 +34,10 @@
                 android:src="@drawable/robot_quiz" />
 
             <TextView
+                android:id="@+id/text_total_score" 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Score: 1580"
+                android:text=" Score: 0"
                 android:textSize="16sp"
                 android:textColor="@android:color/white"
                 android:paddingStart="5dp"/>
@@ -48,10 +49,11 @@
             android:layout_width="253dp"
             android:layout_height="220dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_leader" />
+            android:src="@drawable/ic_smile_robot" />
 
         <!-- TEKS FANTASTIC -->
         <TextView
+            android:id="@+id/text_result_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="FANTASTIC!"
@@ -62,9 +64,10 @@
 
         <!-- SKOR -->
         <TextView
+            android:id="@+id/text_correct_summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4/5 BENAR!"
+            android:text="0/4 BENAR!"
             android:textSize="26sp"
             android:textStyle="bold"
             android:textColor="#FDC743"
@@ -78,14 +81,16 @@
             android:layout_marginTop="15dp">
 
             <TextView
+                android:id="@+id/text_incorrect_summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="❌ 1 Salah"
+                android:text="❌ 0 Salah"
                 android:textSize="15sp"
                 android:textColor="@android:color/white"
                 android:paddingEnd="28dp" />
 
             <TextView
+                android:id="@+id/text_empty_summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="⏱ 0 Kosong"

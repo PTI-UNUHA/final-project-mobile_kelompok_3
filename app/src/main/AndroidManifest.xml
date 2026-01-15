@@ -30,19 +30,21 @@
         <activity
             android:name=".KuisOneActivity"
             android:exported="false" />
+
+
         <activity
-            android:name=".KuisOneActivity"
+            android:name=".DashboardActivity"
             android:exported="false" />
-        <activity
-            android:name=".DashboardAdventureActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MateriActivity"
             android:exported="false" />
+
         <activity
-            android:name=".Materi"
+            android:name=".QuizActivity"
             android:exported="false" />
-        <activity android:name=".DashboardActivity" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

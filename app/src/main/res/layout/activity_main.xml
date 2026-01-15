@@ -18,17 +18,19 @@
         android:textStyle="bold" />
 
     <!-- Robot Image -->
+
+    <!-- Subtitle -->
+
     <ImageView
         android:id="@+id/robotImage"
-        android:layout_width="390dp"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="242dp"
         android:layout_below="@id/tvTitle"
-        android:layout_marginTop="-27dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="Robot Illustration "
         android:scaleType="fitEnd"
         android:src="@drawable/robot_quiz" />
 
-    <!-- Subtitle -->
     <TextView
         android:id="@+id/tvSubtitle"
         android:layout_width="wrap_content"

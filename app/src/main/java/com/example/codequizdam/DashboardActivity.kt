@@ -23,7 +23,7 @@ class DashboardActivity : AppCompatActivity() {
         val btnCardAdventure = findViewById<LinearLayout>(R.id.cardAdventure)
 
         btnCardAdventure.setOnClickListener {
-            val intentKuis = Intent (this, KuisOneActivity::class.java)
+            val intentKuis = Intent (this, QuizActivity::class.java)
 
             startActivity(intentKuis)
         }

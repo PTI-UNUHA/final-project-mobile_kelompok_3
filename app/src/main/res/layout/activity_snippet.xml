@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E8F3FF">
@@ -15,7 +17,6 @@
             android:layout_height="60dp"
             android:background="#2467FF"
             android:padding="15dp"
-            android:radius="20dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -66,17 +67,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Soal 4/5"
+                android:text="Soal 2/5"
                 android:textColor="#334155"
                 android:textSize="16sp"
-                android:layout_marginLeft="10dp"/>
+                android:layout_marginStart="10dp"/>
         </LinearLayout>
 
         <!-- PROGRESS BAR -->
         <ProgressBar
             android:layout_width="match_parent"
             android:layout_height="7dp"
-            android:progress="80"
+            android:progress="40"
             android:progressTint="#2467FF"
             android:backgroundTint="#BFD7FF"
             style="?android:attr/progressBarStyleHorizontal"
@@ -84,8 +85,10 @@
 
         <!-- DRAG AREA -->
         <LinearLayout
+            android:id="@+id/drag_area"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="wrap_content"
+            android:minHeight="170dp"
             android:background="@drawable/box_area"
             android:orientation="vertical"
             android:gravity="center"
@@ -93,6 +96,7 @@
             android:padding="15dp">
 
             <TextView
+                android:id="@+id/drag_area_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SERET KODE KE SINI"
@@ -101,121 +105,60 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="10dp"/>
 
-            <!-- Kotak grid -->
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:rowCount="3"
-                android:columnCount="4"
-                android:alignmentMode="alignMargins"
-                android:rowOrderPreserved="false">
-
-                <!-- 12 kotak -->
-                <View
-                    android:layout_width="65dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/code_empty_box"
-                    android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-                <View android:layout_width="65dp" android:layout_height="30dp" android:background="@drawable/code_empty_box" android:layout_margin="6dp"/>
-
-            </GridLayout>
         </LinearLayout>
 
-        <GridLayout
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/source_code_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="4"
-            android:alignmentMode="alignMargins"
-            android:rowOrderPreserved="false"
+            app:columnCount="2"
+            app:rowCount="4"
+            app:alignmentMode="alignMargins"
             android:layout_marginTop="10dp">
 
-            <!-- KOLOM KIRI -->
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text="int number = 10;"
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
-
-            <!-- KOLOM KANAN -->
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text="if (number > 5) {"
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
-
-            <!-- Pindahkan item berikutnya dengan urutan yang kamu mau -->
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text="}"
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
+                android:id="@+id/code_1"
+                style="@style/CodeSnippet"
+                android:tag="code_1"
+                android:text="int number = 10;"/>
 
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text='System.out.println(\"Besar\");'
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
+                android:id="@+id/code_2"
+                style="@style/CodeSnippet"
+                android:tag="code_2"
+                android:text="if (number > 5) {"/>
 
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text="if (number > 5) {"
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
+                android:id="@+id/code_3"
+                style="@style/CodeSnippet"
+                android:tag="code_3"
+                android:text="}"/>
 
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text="} else {"
-                android:textColor="#1E293B"
-                android:textSize="15sp"
-                android:layout_margin="6dp"/>
+                android:id="@+id/code_4"
+                style="@style/CodeSnippet"
+                android:tag="code_4"
+                android:text="System.out.println(&quot;Besar&quot;);"/>
 
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:background="@drawable/code_box"
-                android:text='System.out.println(\"Kecil\");'
-            android:textColor="#1E293B"
-            android:textSize="15sp"
-            android:layout_margin="6dp"/>
+                android:id="@+id/code_5"
+                style="@style/CodeSnippet"
+                android:tag="code_5"
+                android:text="if (number > 5) {"/>
 
-        </GridLayout>
+            <TextView
+                android:id="@+id/code_6"
+                style="@style/CodeSnippet"
+                android:tag="code_6"
+                android:text="} else {"/>
+
+            <TextView
+                android:id="@+id/code_7"
+                style="@style/CodeSnippet"
+                android:tag="code_7"
+                android:text="System.out.println(&quot;Kecil&quot;);"/>
+
+        </androidx.gridlayout.widget.GridLayout>
 
         <!-- BUTTON -->
         <Button
